@@ -32,7 +32,6 @@ function operandChoise(operand){
 function comput(){
     const previous = parseFloat(previousOperandDisplay.innerHTML);
     const current = parseFloat(currentOperandDisplay.innerHTML);
-    console.log(operation);
     if((operation ==="+" || operation ==="-" || operation ==="*" || operation ==="/" || operation ==="%") && previous !== "NaN"){
         switch (operation) {
             case '+':
@@ -83,8 +82,6 @@ operators.forEach(operator =>{
 equals.addEventListener('click', ()=>{
     updateDisplay();
     comput();
-    console.log(inputValue)
-    console.log(numberValue)
 })
 
 parcentBtn.addEventListener('click', ()=>{
