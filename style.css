@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    min-width: 220px;
+    height: 350px;
+    padding: 5px;
+    background-color: gray;
+    margin: 50px auto;
+    border-radius: 6px;
+    box-shadow: 7px 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.display-div{
+    height: 30%;
+    width: 90%;
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
+}
+
+.display-box{
+    height: 45%;
+    width: 99%;
+    outline: none;
+    font-size: 18px;
+    text-align: right;
+    background-color: #fff;
+    padding: 10px 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+}
+
+.upper-inputs, .left-inputs{
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    gap: 10px;
+    justify-content: center;
+}
+
+.down-inputs{
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+}
+
+.btn{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: 600;
+    outline: none;
+}
+
+.btn:hover{
+    background-color: lightseagreen;
+}
+
+.btn-equals{
+    grid-row: span 2;
+    background-color: turquoise;
+}
+
+[data-operator]{
+    background-color: turquoise;
+}
