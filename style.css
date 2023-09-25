@@ -28,15 +28,23 @@
 }
 
 .display-box{
-    height: 45%;
+    height: 48%;
     width: 99%;
     outline: none;
     font-size: 18px;
     text-align: right;
     background-color: #fff;
-    padding: 10px 15px;
     word-wrap: break-word;
     word-break: break-all;
+}
+
+[data-current-operand]{
+    font-size: 1.5em;
+    padding: 0 15px 0 15px;
+}
+
+.previous-operand{
+    padding: 0 15px;
 }
 
 .input-div{
@@ -76,6 +84,6 @@
     background-color: turquoise;
 }
 
-[data-operator]{
+[data-operator], [data-parcent]{
     background-color: turquoise;
 }

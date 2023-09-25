@@ -59,7 +59,6 @@ function comput(){
                 return;
         }
     }
-    // currentOperandDisplay.innerHTML = operation;
     previousOperandDisplay.innerHTML = '';
 }
 
@@ -96,4 +95,12 @@ clearAll.addEventListener('click', ()=>{
     currentOperandDisplay.innerHTML = '';
     numberValue = undefined;
     inputValue.splice(0, inputValue.length); 
+})
+
+deleteOne.addEventListener('click', ()=>{
+    var currentPac = currentOperandDisplay.innerHTML.toString();
+    var delOne =currentPac.substring(0,currentPac.length-1);
+    currentOperandDisplay.innerHTML = delOne;
+    numberValue = currentOperandDisplay.innerHTML;
+    inputValue.splice(0, inputValue.length);
 })
