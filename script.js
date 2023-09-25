@@ -15,6 +15,7 @@ function emptyValues(){
 
 }
 
+
 function appendNumbers(number){
     inputValue.push(number);
     numberValue = inputValue.join('');
